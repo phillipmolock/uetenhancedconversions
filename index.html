@@ -38,9 +38,6 @@
             console.log("Email:", email);
             console.log("Phone:", phone);
             console.log("selectedOption:", selectedOption);
-
-            // For demonstration purposes, let's display an alert
-            alert(`Thank you! You submitted:\nEmail: ${email}\nPhone: ${phone}`);
         }
     </script>
 </head>
@@ -54,11 +51,11 @@
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required><br>
         
-        <label>Choose an option:</label>
+        <label>Choose an option:</label><br>
         <input type="radio" id="option1" name="option" value="Option 1" required>
-        <label for="option1">Option 1</label>
+        <label for="option1">Option 1: EC on all Events on Page</label><br>
         <input type="radio" id="option2" name="option" value="Option 2" required>
-        <label for="option2">Option 2</label><br>
+        <label for="option2">Option 2: EC on just a single Event</label><br>
         
         <button type="button" onclick="formSubmit()">Submit</button>
     </form>
