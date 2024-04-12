@@ -38,10 +38,16 @@
             console.log("Email:", email);
             console.log("Phone:", phone);
             console.log("selectedOption:", selectedOption);
-            if (selectedOption === "option1"){
+            if (selectedOption === "Option 1"){
+                // Set EC for all events
                 console.log("selectedOption1:", selectedOption);
-            } else if (selectedOption === "option2"){
+                window.uetq = window.uetq || [];  
+                window.uetq.push('set', { 'pid': { 'em': email, 'ph': phone } });
+            } else if (selectedOption === "Option 2"){
+                // Set EC for a single event
                 console.log("selectedOption2:", selectedOption);
+                window.uetq = window.uetq || [];  
+                window.uetq.push('event', 'MyAction', { 'pid': { 'em': email, 'ph': phone } });
             }
         }
     </script>
